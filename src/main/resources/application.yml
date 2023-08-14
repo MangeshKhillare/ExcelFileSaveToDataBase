@@ -1,0 +1,20 @@
+server:
+  port: 8090
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/excelsheetsavedatabase
+    username: root
+    password: rootpassword
+  jpa:
+    hibernate:
+      show-sql: true
+      ddl-auto: update
+    
+      
+      
+  servlet:
+    multipart:
+      max-file-size: 6MB 
+      max-request-size: 6MB           
